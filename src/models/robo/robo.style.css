@@ -1,0 +1,21 @@
+.spline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(230 230 249);
+    width: 100%;
+    transition: top 0.3s ease, left 0.3s ease; 
+    z-index: -1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.spline-container {
+    width: 80%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}

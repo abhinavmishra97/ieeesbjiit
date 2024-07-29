@@ -1,0 +1,59 @@
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.top-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #000000;
+    box-shadow: 0 4px 12px rgba(76, 0, 255, 0.3);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        background-color: #2d2d2d;
+        transform: scale(1.05);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.top-btn img {
+    width: 2rem;
+}
+
+.visible {
+    opacity: 1;
+    display: block;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 64rem) {
+    .top-btn {
+        width: 3rem;
+        height: 3rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+    .top-btn img{
+        width: 1.5rem;
+    }
+}

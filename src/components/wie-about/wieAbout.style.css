@@ -1,0 +1,126 @@
+body {
+  font-family: Josefin Sans, sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1c3ae;
+  border-radius: 10px;
+}
+
+.blurred {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease-in-out;
+}
+
+.vim {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.WieAbout hr {
+  border: 1px solid whitesmoke;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.WieAbout {
+  margin: 40px auto;
+  padding: 0;
+  margin-top: 60px;
+  max-width: 85%;
+}
+
+.WieAboutContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.WieAboutPhoto img {
+  width: 280px;
+}
+
+.WieAboutContent p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: Poppins;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .WieAboutContent {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .WieAboutContent p {
+    width: 30x;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+
+  .WieAboutContent p ul {
+    padding: 4px;
+    margin: 2px;
+  }
+}
+
+.WieAboutText p,
+.WieAboutText ul {
+  color: #000;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  unicode-bidi: isolate;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 1em 0 1em 40px;
+  padding: 0;
+  unicode-bidi: isolate;
+}
+
+li {
+  unicode-bidi: isolate;
+}
+
+.wie-events {
+  font-family: "Lato", sans-serif;
+  font-size: 6vh;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.backt {
+  font-size: 6vh;
+  color: white;
+}

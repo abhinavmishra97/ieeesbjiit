@@ -1,0 +1,22 @@
+.about-container {
+    padding: 1.25rem;
+    max-width: 50rem;
+    margin: auto;
+    z-index: 5;
+}
+
+.about-container h1 {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.about-container p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about-container hr {
+    border: 0.0625rem solid whitesmoke;
+    margin: 1.25rem 0;
+}

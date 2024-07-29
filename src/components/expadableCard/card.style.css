@@ -1,0 +1,309 @@
+.cardContainer {
+    width: 100%;
+    margin-bottom: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.eventTitle{
+    margin-bottom: 2rem;
+}
+
+.eventTitle h1 {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.eventTitle hr {
+    border: 0.0625rem solid whitesmoke;
+    max-width: 40rem;
+    margin: auto;
+}
+
+.cardSubContainer {
+    height: 25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.card {
+    width: 5rem;
+    border-radius: 0.75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 0.625rem;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.8s cubic-bezier(0.42, 0, 0.58, 1), width 0.8s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.8s cubic-bezier(0.42, 0, 0.58, 1);
+    box-shadow: 0 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
+    position: relative;
+}
+
+.card.expanding {
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1), width 0.6s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.card.contracting {
+    transition: transform 0.8s cubic-bezier(0.42, 0, 0.58, 1), width 0.8s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.8s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.card.expanded {
+    width: 37.5rem;
+}
+
+.card > .row {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.9375rem;
+    height: 3.125rem;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    padding: 0 1.25rem;
+    transform: translateY(1.875rem);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, background 0.4s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.4375rem);
+    box-sizing: border-box;
+}
+
+.card.expanded .description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.description p {
+    color: #000;
+    padding-bottom: 1.875rem;
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.1rem;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.card.expanded .vertical-text {
+    opacity: 0;
+}
+
+@media (max-width: 48rem) {
+    .cardSubContainer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .card,
+    .card.expanded {
+        width: 90%;
+        margin: 0.625rem 0;
+    }
+
+    .card .description,
+    .card.expanded .description {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .vertical-text {
+        display: none;
+    }
+}
+.cardContainer {
+    width: 100%;
+    margin-bottom: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.eventTitle h1 {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.eventTitle hr {
+    border: 0.0625rem solid whitesmoke;
+    max-width: 25rem;
+    margin: auto;
+}
+
+.cardSubContainer {
+    height: 25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.card {
+    width: 5rem;
+    border-radius: 0.75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 0.625rem;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.8s cubic-bezier(0.42, 0, 0.58, 1), width 0.8s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.8s cubic-bezier(0.42, 0, 0.58, 1);
+    box-shadow: 0 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
+    position: relative;
+}
+
+.card.expanding {
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1), width 0.6s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.card.contracting {
+    transition: transform 0.8s cubic-bezier(0.42, 0, 0.58, 1), width 0.8s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.8s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.card.expanded {
+    width: 37.5rem;
+}
+
+.card > .row {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.9375rem;
+    height: 3.125rem;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    padding: 0 1.25rem;
+    transform: translateY(1.875rem);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, background 0.4s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.4375rem);
+    box-sizing: border-box;
+}
+
+.card.expanded .description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.description p {
+    color: #000;
+    padding-bottom: 1.875rem;
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 1rem;
+    bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.1rem;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.card.expanded .vertical-text {
+    opacity: 0;
+}
+
+@media (max-width: 48rem) {
+    .cardSubContainer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .card,
+    .card.expanded {
+        width: 90%;
+        margin: 0.625rem 0;
+    }
+
+    .card .description,
+    .card.expanded .description {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .vertical-text {
+        display: none;
+    }
+}
